@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: blue;
+}
+
+h1{
+ font-size: 30px;
+   }
+   
+.imagen-principal{
+	width: 700px;
+	height: 350px;
+}
+
+.imgbra{
+	width:  60%;
+	height: 70%;
+}
+h2,h3,h4,h5,h6{
+	color: #000066;	
+	font-size: 30px;
+}
+
+p{ font-size: 18px }
+
+
+.container{
+	max-width: 1000px;
+	margin: auto;
+	width: 90%;
+}
+
+.logo{
+	
+	width: 90%;
+	
+}
+
+
+.fotolugar{
+	width: 95%;
+	height: 30vh;
+}
+
+ /*barra navegacion*/
+
+nav{
+	background: gold;
+
+}
+nav ul li {
+	display: inline-block;
+	margin: 5px;
+}
+
+nav ul li a{
+	font-size: 4vh;
+	text-decoration: none;
+	border: 1px solid green;
+}
+
+nav ul li a:hover{ 
+	color: yellow;
+	background: green;
+}
+
+/*SLIDER*/
+.slider{
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.slider ul{
+	padding: 0;
+	display: flex;
+	width: 500%;
+	animation: cambio 10s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider li{ 
+	list-style: none; 
+	width: 100%;
+	}
+ 
+.slider img{
+	width: 100%;
+	height: 300px;}
+
+/*contenido*/
+.contenido ul{
+	font-size: 18px;
+	list-style: none;
+			}
+
+/*lugares*/
+.lugares{
+	display: grid;
+	grid-template-columns: repeat( 3, 1fr);
+	margin-top: 15px;}
+
+.lugares div:hover{ border: 2px solid green; }
+
+/*botones*/
+.botones{
+	border:  2px solid black;
+	background: white;
+	color: black; 
+	padding: 1vh;
+
+}
+
+.botones:hover{
+	background-color: black;
+	color: white;
+}
+
+/*formulario*/
+.formulario{
+ width: 90%;
+ margin: auto;
+ background: #33cc33;
+ padding: 10px 20px; 
+ box-sizing: border-box;
+ margin-top: 20px;
+ border-radius: 7px;
+ font-family: monospace;}
+
+.contacto{
+ 	color: white;
+ 	text-align: center;
+ 	margin:0;
+ 	font-size: 30px;
+ 	margin-bottom: 20px;
+ }
+ input, textarea{
+ 	width: 100%;
+ 	margin-bottom: 20px;
+ 	padding: 7px;
+ 	font-size: 17px;
+ 	border: none;
+ 	box-sizing: border-box;
+ 	background: white;
+  }
+
+  textarea{
+  	min-height: 100px;
+  	max-height: 200px;
+  	max-width: 100%
+
+  }
+
+  #boton{ 
+  	background: white; 
+    color: forestgreen;
+    padding: 10px;}
+
+ #boton:hover{ 
+    cursor: pointer; 
+    color: yellow;
+    background: green;}
+
+/*pagina rio*/
+.rio{
+	height: 10px
+}
+
+/*tabla*/
+table, th, td{
+	border: 1px solid green;
+	border-collapse: collapse;
+	padding:  1px;
+}
+
+@media (max-width: 480px){
+  	.conainer{ width: 100% }
+  }
+/*slider animacion*/
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+    
+    20% {margin-left: -100%;}
+   40% {margin-left: -100%;}
+
+   40% {margin-left: -200%;}
+   60% {margin-left: -200%;}
+   
+   60% {margin-left: -300%;}
+   80% {margin-left: -300%;}
+
+   80% {margin-left: -400%;}
+   100% {margin-left: -400%;}
+
+ }
+
+
+ 
+   
